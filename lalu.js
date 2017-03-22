@@ -11,7 +11,7 @@ var sections = [
 		},
 		{	sentence: " excited about Google Summer of Code",
 		},
-		{	sentence: " contibuting to Zulip-electron",
+		{	sentence: " contributing to Zulip-electron",
 		},
 		{	sentence: " interested in Mean Stack",
 		},
