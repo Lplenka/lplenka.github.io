@@ -7,7 +7,7 @@ var sections = [
 
 		},
 		{
-			sentence: "has programming experience with Python, C++, R & Java",
+			sentence: "has programming experience with Python, C++, R and Java",
 		},
 		{
 			sentence: " has worked with many deep learning frameworks",
