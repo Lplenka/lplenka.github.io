@@ -3,24 +3,39 @@
     GLOBALS
 -------------------------*/
 var sections = [
-		{	sentence: " an enthusiastic developer based in India",
+		{	sentence: " an enthusiastic data scientist based in India",
+
 		},
+		{
+			sentence: " programming experience with one or more of Python, C++, R, Java",
+		},
+		{
+			sentence: " worked with many deep learning frameworks",
+		},
+		{
+
+			sentence: "has excellent analytical, quantitative and problem-solving skills and demonstrated research ability",
+
+		},
+		{
+			sentence:"strong communication skills and the ability to present findings to a non-technical audience.",
+		},
+
 		{	sentence: " a lover of learning new things",
 		},
-		{	sentence: " making applications",
+		{	sentence: " excited about solving problems with data",
 		},
-		{	sentence: " excited about Google Summer of Code",
-		},
-		{	sentence: " contributing to Zulip-electron",
-		},
-		{	sentence: " interested in Mean Stack",
+		{	sentence: " building deep neural nets",
 		},
 		{	sentence: " interested in Machine learning",
 		},
-		{	sentence: " curious about Open-source",
+		{	sentence: " making AI applications",
 		},
-		{	sentence: " in love with making web applications",
+		{	sentence: " curious about Self-driving cars",
 		},
+		{	sentence: " A visionary on integrating Deep Learning into HPC architectures to support various applications especially in Retail, Healthcare & Image/Face recognition domains",
+		},
+
 		{	sentence: " not so secretly in love with Game of Thrones",
 		},
 		{	sentence: " thinking what to write next",
