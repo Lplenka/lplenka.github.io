@@ -3,7 +3,7 @@
     GLOBALS
 -------------------------*/
 var sections = [
-		{	sentence: " is an enthusiastic data scientist based in India",
+		{	sentence: " is an enthusiastic data scientist based in Bangalore",
 
 		},
 		{
@@ -42,8 +42,8 @@ var sections = [
 		},
 		{	sentence: "is thinking of ways to be famous",
 		},
-		{	sentence: "is in a hurry to graduate",
-		},
+		// {	sentence: "is in a hurry to graduate",
+		// },
 		{	sentence: "is a CETIAN",
 		},
 		{	sentence: "is thinking of beaches and blue water",
