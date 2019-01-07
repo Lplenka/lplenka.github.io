@@ -33,7 +33,7 @@ var sections = [
 		},
 		{	sentence: "is curious about Self-driving cars",
 		},
-		{	sentence: "is a visionary on integrating Deep Learning into HPC architectures to support various applications especially in Retail, Healthcare & Image/Face recognition domains",
+		{	sentence: "is a visionary on integrating Deep Learning into HPC architectures",
 		},
 
 		{	sentence: "is not so secretly in love with Game of Thrones",
