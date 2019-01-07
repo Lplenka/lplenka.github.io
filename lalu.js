@@ -3,14 +3,14 @@
     GLOBALS
 -------------------------*/
 var sections = [
-		{	sentence: " an enthusiastic data scientist based in India",
+		{	sentence: " is an enthusiastic data scientist based in India",
 
 		},
 		{
-			sentence: " programming experience with one or more of Python, C++, R, Java",
+			sentence: "has programming experience with one or more of Python, C++, R, Java",
 		},
 		{
-			sentence: " worked with many deep learning frameworks",
+			sentence: " has worked with many deep learning frameworks",
 		},
 		{
 
@@ -18,43 +18,43 @@ var sections = [
 
 		},
 		{
-			sentence:"strong communication skills and the ability to present findings to a non-technical audience.",
+			sentence:"has strong communication skills and the ability to present findings to a non-technical audience.",
 		},
 
-		{	sentence: " a lover of learning new things",
+		{	sentence: "is a lover of learning new things",
 		},
-		{	sentence: " excited about solving problems with data",
+		{	sentence: "is excited about solving problems with data",
 		},
-		{	sentence: " building deep neural nets",
+		{	sentence: "is building deep neural nets",
 		},
-		{	sentence: " interested in Machine learning",
+		{	sentence: "is interested in Machine learning",
 		},
-		{	sentence: " making AI applications",
+		{	sentence: "is making AI applications",
 		},
-		{	sentence: " curious about Self-driving cars",
+		{	sentence: "is curious about Self-driving cars",
 		},
-		{	sentence: " A visionary on integrating Deep Learning into HPC architectures to support various applications especially in Retail, Healthcare & Image/Face recognition domains",
+		{	sentence: "is a visionary on integrating Deep Learning into HPC architectures to support various applications especially in Retail, Healthcare & Image/Face recognition domains",
 		},
 
-		{	sentence: " not so secretly in love with Game of Thrones",
+		{	sentence: "is not so secretly in love with Game of Thrones",
 		},
-		{	sentence: " thinking what to write next",
+		{	sentence: "is thinking what to write next",
 		},
-		{	sentence: " thinking of ways to be famous",
+		{	sentence: "is thinking of ways to be famous",
 		},
-		{	sentence: " in a hurry to graduate",
+		{	sentence: "is in a hurry to graduate",
 		},
-		{	sentence: " a CETIAN",
+		{	sentence: "is a CETIAN",
 		},
-		{	sentence: " thinking of beaches and blue water",
+		{	sentence: "is thinking of beaches and blue water",
 		},
-		{	sentence: " stuffing himself with pizza",
+		{	sentence: "is stuffing himself with pizza",
 		},
-		{	sentence: " playing DOTA 2",
+		{	sentence: "is playing DOTA 2",
 		},
-		{	sentence: " curious to know you",
+		{	sentence: "is curious to know you",
 		},
-		{	sentence: " trying to build up his portfolio",
+		{	sentence: "is trying to build up his portfolio",
 		}
 	];
 var i = 0;
