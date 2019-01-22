@@ -138,12 +138,12 @@ h4 {
 .textContainer {
   position: relative;
   text-align: left;
-  font-size: 7vw;
+  font-size: 6vw;
   font-family: 'Lato', sans-serif;
   color: #fff;
   letter-spacing: -0.38vw;
   line-height: 0.98;
-  min-height: 88vh;
+  min-height: 66vh;
 }
 
 .jstext {
