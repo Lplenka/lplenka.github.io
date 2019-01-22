@@ -3,22 +3,31 @@
     GLOBALS
 -------------------------*/
 var sections = [
-		{	sentence: " is an enthusiastic data scientist based in Bangalore",
+		{	sentence: "is an enthusiastic data scientist based in Bangalore",
 
 		},
 		{
 			sentence: "has programming experience with Python, C++, R and Java",
 		},
 		{
-			sentence: " has worked with many deep learning frameworks",
+			sentence: "has worked with many deep learning frameworks",
 		},
 		{
 
-			sentence: "has excellent analytical, quantitative and problem-solving skills and demonstrated research ability",
+			sentence: "has excellent analytical, quantitative and problem-solving skills",
 
 		},
 		{
-			sentence:"has strong communication skills and the ability to present findings to a non-technical audience.",
+			sentence: "has demonstrated research ability",
+
+		},
+
+		{
+			sentence:"has strong communication skills",
+		},
+		{
+                           sentence:"has ability to present findings to a non-technical audience.",
+
 		},
 
 		{	sentence: "is a lover of learning new things",
@@ -44,14 +53,14 @@ var sections = [
 		},
 		// {	sentence: "is in a hurry to graduate",
 		// },
-		{	sentence: "is a CETIAN",
-		},
+		// {	sentence: "is a CETIAN",
+		// },
 		{	sentence: "is thinking of beaches and blue water",
 		},
 		{	sentence: "is stuffing himself with pizza",
 		},
-		{	sentence: "is playing DOTA 2",
-		},
+		// {	sentence: "is playing DOTA 2",
+		// },
 		{	sentence: "is curious to know you",
 		},
 		{	sentence: "is trying to build up his portfolio",
@@ -150,9 +159,15 @@ function rand(min, max) {
 }
 function changebackground(){
 	var body = $("body");
-    var h = rand(1, 360);
-    var s = rand(80, 90);
-    var l = rand(50, 60);
+    // var h = rand(1, 360);
+    // var s = rand(80, 90);
+    // var l = rand(50, 60);
+    // var h = rand(193, 250);
+    // var s = rand(85, 90);
+    // var l = rand(55, 57);
+    var h = rand(182, 172);
+    var s = rand(40, 65);
+    var l = rand(29, 40);
     var h2;
     if(h < 180){
     	h2 = h + 180;
