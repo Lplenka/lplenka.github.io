@@ -19,8 +19,8 @@ body, html {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   border: 2px dashed white;
   background-clip: content-box;
@@ -32,7 +32,7 @@ body, html {
   text-shadow:
     0 -1px 0 rgba(0, 0, 0, 0.2),
     0 1px 0 rgba(255, 255, 255, 0.2);
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 5px;
 }
 
@@ -238,7 +238,7 @@ section h4:after {
 }
 
 .shortColumn {
-  width: 62%;
+  width: 80%;
 }
 
 .loopCol {
