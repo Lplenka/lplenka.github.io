@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900,300);
 body, html {
   height: 100%;
-  color: white;
+  color: rgba(0, 0, 0, 0.795);
   font-family: 'Lato', sans-serif;
   -webkit-transition: background 20s linear;
   -moz-transition: background 20s linear;
@@ -22,7 +22,7 @@ body, html {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  border: 2px dashed white;
+  border: 2px dashed rgba(185, 185, 185, 0.897);
   background-clip: content-box;
   padding: 7px;
   transition: .5s;
@@ -47,36 +47,36 @@ body, html {
 
 .social .link:hover {
   padding: 20px;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
   margin-left: -5px;
   transform: translateX(10px) rotate(360deg);
 }
 
 .social .link.google-plus {
   background-color: tomato;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
 }
 
 .social .link.twitter {
   background-color: #00ACEE;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
 }
 .social .link.youtube {
   background-color: #c4302b;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
 }
 .social .link.linkedin {
   background-color: #0e76a8;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
 }
 .social .link.github {
   background-color: #3a3a3a;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
 }
 
 .social .link.facebook {
   background-color: #3B5998;
-  color: white;
+  color: rgba(255, 255, 255, 0.959);
 }
 
 
@@ -108,7 +108,7 @@ body, html {
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgba(19, 19, 19, 0.733);
 }
 
 h3 {
@@ -140,7 +140,7 @@ h4 {
   text-align: left;
   font-size: 6vw;
   font-family: 'Lato', sans-serif;
-  color: #fff;
+  color: rgba(37, 37, 37, 0.74);
   letter-spacing: -0.38vw;
   line-height: 0.98;
   min-height: 66vh;
@@ -242,7 +242,7 @@ section h4:after {
 }
 
 .loopCol {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(22, 22, 22);
   position: relative;
 }
 .loopCol:hover span {
@@ -437,7 +437,7 @@ section h4:after {
 .spanActive {
   z-index: 500;
   position: relative;
-  background: white;
+  background: rgb(110, 108, 108);
 }
 
 .bgActive {
@@ -462,7 +462,7 @@ section h4:after {
   	}*/
 }
 .loopCol:hover {
-  background: white;
+  background: rgb(105, 105, 105);
   z-index: 500;
 }
 

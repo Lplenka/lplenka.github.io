@@ -1,0 +1,80 @@
+---
+common-css:
+  - "/assets/css/bootstrap-social.css"
+  - "/assets/css/main.css"
+common-ext-css:
+  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    sri: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  - "https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+  - "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-ext-js:
+  - href: "https://code.jquery.com/jquery-3.4.1.min.js"
+    sri: "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  - href: "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    sri: "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    sri: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+common-js:
+  - "/assets/js/main.js"
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: 'en' }}">
+{% include head.html %}
+{% include nav.html %}
+
+<body>
+
+{% include header.html %}
+
+  {% if site.layout == 'stacked' %}
+    <div class="container-lg py-6 p-responsive text-center">
+      {% include masthead.html metadata=true %}
+
+      <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        {{ content }}
+      </div>
+
+      <div class="my-6">
+        {% include projects.html %}
+      </div>
+
+        {% if site.topics %}
+        <div class="my-6">
+          {% include interests.html %}
+        </div>
+        {% endif %}
+    
+    </div>
+  {% else %}
+    <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}" style="margin-top: 5%;">
+      <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
+        {% include masthead.html metadata=true %}
+      </div>
+
+      <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+        <div class="mx-auto" style="max-width: 900px;">
+          {% unless content == ""  %}
+            <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
+              {{ content }}
+            </div>
+          {% endunless %}
+
+          {% include projects.html %}
+
+        {% if site.topics %}
+        <div class="my-6">
+          {% include interests.html %}
+        </div>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% include footer.html %}
+  {% include footer-scripts.html %}
+  </body>
+
+  </html>

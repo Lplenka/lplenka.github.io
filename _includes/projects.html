@@ -1,0 +1,64 @@
+<h2 {% if site.style == 'dark' %}class="text-white" {% endif %} style="text-align: center; margin-bottom: 0.8rem;">My Projects on GitHub</h2>
+<!-- <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}" style="text-align: center;">
+  GitHub repositories that I've built.</p> -->
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  {% if site.projects.sort_by == 'stars' %}
+    {% assign sort_order = 'stargazers_count', 'last' %}
+  {% else %}
+    {% assign sort_order = 'name' %}
+  {% endif %}
+
+  {% if site.projects.exclude.archived && site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order    | reverse %}
+  {% elsif site.projects.exclude.archived %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order   | reverse %}
+  {% elsif site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'fork', false   | reverse %}
+  {% else %}
+    {% assign filtered_repos = site.github.public_repositories | sort: sort_order    | reverse %}
+  {% endif %}
+
+  {% assign all_pub_repo = site.github.public_repositories   
+    | where:'archived', false 
+    | where:'fork', false 
+  %}
+
+  {% assign repo1 = all_pub_repo 
+    | where_exp: "item", "item.name == 'BERT-for-SQuAD'"
+  %}
+  
+  {% assign repo2 = all_pub_repo 
+    | where_exp: "item", "item.name == 'BERT-for-NER'"
+  %}
+
+
+  {% assign repo3 = all_pub_repo 
+    | where_exp: "item", "item.name == 'yolov3_transfer_learning'"
+  %}
+
+  {% assign repo4 = all_pub_repo 
+    | where_exp: "item", "item.name == 'Traffic-Sign-Classifier-Project'"
+  %}
+
+  {% assign repo5 = all_pub_repo 
+    | where_exp: "item", "item.name == 'Behavioral-Cloning'"
+  %}
+
+  {% assign repo6 = all_pub_repo 
+    | where_exp: "item", "item.name == 'Extended-Kalman-Filter'"
+  %}
+
+
+
+  {% assign repo_list = repo1 | push: repo2[0] | push: repo3[0] |push: repo4[0] |push: repo5[0] | push: repo6[0] %}
+
+  {% for repository in repo_list | limit: site.projects.limit %}
+    {% unless site.projects.exclude.projects contains repository.name %}
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        {% include repo-card.html %}
+      </div>
+    {% endunless %}
+  {% endfor %}
+</div>
+
+

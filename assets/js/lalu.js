@@ -13,6 +13,9 @@ var sections = [
 			sentence: "has worked with many deep learning frameworks",
 		},
 		{
+			sentence: "has worked with deployed models on Cloud",
+		},
+		{
 
 			sentence: "has excellent analytical, quantitative and problem-solving skills",
 
@@ -45,11 +48,11 @@ var sections = [
 		{	sentence: "is a visionary on integrating Deep Learning into HPC architectures",
 		},
 
-		{	sentence: "is not so secretly in love with Game of Thrones",
+		{	sentence: "is not so secretly in love with Money Heist",
 		},
 		{	sentence: "is thinking what to write next",
 		},
-		{	sentence: "is thinking of ways to be famous",
+		{	sentence: "is thinking of ways to be 4x Kaggle Grandmaster",
 		},
 		// {	sentence: "is in a hurry to graduate",
 		// },
@@ -164,10 +167,15 @@ function changebackground(){
     // var l = rand(50, 60);
     // var h = rand(193, 250);
     // var s = rand(85, 90);
-    // var l = rand(55, 57);
-    var h = rand(182, 172);
-    var s = rand(40, 65);
-    var l = rand(29, 40);
+	// var l = rand(55, 57);
+	
+    // var h = rand(182, 172);
+    // var s = rand(40, 65);
+	// var l = rand(29, 40);
+    var h = rand(195, 225);
+    var s = rand(195, 225);
+	var l = rand(195, 225);
+	
     var h2;
     if(h < 180){
     	h2 = h + 180;

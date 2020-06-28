@@ -1,0 +1,95 @@
+---
+common-css:
+  - "/assets/css/bootstrap-social.css"
+  - "/assets/css/main.css"
+common-ext-css:
+  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    sri: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  - "https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+  - "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-ext-js:
+  - href: "https://code.jquery.com/jquery-3.4.1.min.js"
+    sri: "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  - href: "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    sri: "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    sri: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+common-js:
+  - "/assets/js/main.js"
+---
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: 'en' }}">
+{% include head.html %}
+{% include nav.html %}
+
+<body>
+
+{% include header.html %}
+
+{% capture post_body %}
+  {% if site.social_media %}
+    {% assign shareable_social_media = '' | split: ',' %}
+
+    {% for account in site.social_media %}
+      {% assign service_shortname = account[0] %}
+      {% assign service = site.data.social_media[service_shortname] %}
+
+      {% if service.share_url_prefix %}
+        {% assign shareable_social_media = shareable_social_media | push: service %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign total_shareable_services = shareable_social_media | size %}
+
+    {% if total_shareable_services > 0 %}
+      <div class="col-sm-4 col-lg-3 d-flex flex-wrap flex-items-center d-sm-block float-sm-right border rounded-2 bg-white p-3 mb-5 ml-md-5" >
+        <h3 class="text-gray-dark mr-3 mr-sm-0">Share</h3>
+        <ul class="d-flex d-sm-block list-style-none">
+          {% for service in shareable_social_media %}
+            <li class="mt-sm-3">
+              <a href="{{ service.share_url_prefix }}{{ page.url | prepend: site.url | prepend: site.baseurl | url_encode }}" title="Share on {{ service.name }}" class="d-flex flex-items-center">
+                <div style="width:32px">{{ service.icon_svg }}</div><span class="d-none d-sm-inline-block text-gray-light">{{ service.name }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  {% endif %}
+  <div class="article">
+    {{ content }}
+  </div>
+{% endcapture %}
+
+  <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
+        <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light
+            bg-white{% endif %} col-md-1 col-lg-1 col-xl-1 px-4 px-md-6 px-lg-7 py-6">
+        </div>
+
+
+    <div class="col-md-10 col-lg-10 col-xl-10 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light"
+      {% if site.style == 'dark' %}style="background-color: #2f363d !important" {% endif %} style="
+      margin-top: 5%;">
+      <div class="mx-auto" style="max-width: 900px;">
+        <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
+          <div class="f4 {% if site.style == 'dark' %}text-white{% endif %}">
+            <!-- <p class="f5"><a href="{{ site.url }}{{ site.baseurl | append:'/' }}" class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Home %}Home</a></p> -->
+            <h1 class="f00-light lh-condensed">{{ page.title }}</h1>
+            <p class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %} mb-5">Published {{ page.date | date: "%b %d, %Y"}}</p>
+            {{ post_body }}
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light
+                bg-white{% endif %} col-md-1 col-lg-1 col-xl-1 px-4 px-md-6 px-lg-7 py-6">
+        </div>
+
+  </div>
+
+
+{% include footer-scripts.html %}
+</body>
+
+</html>

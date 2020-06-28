@@ -1,0 +1,98 @@
+layout: sidebar
+style: light
+
+
+# Name of website
+title: Lalu Prasad Lenka
+
+
+# Short description of your site
+description: Lalu Prasad Lenka's Portfolio
+
+# Your name to show in the footer
+author: Lalu Prasad Lenka
+
+# --- List of links in the navigation bar --- #
+
+navbar-links:
+  Home: "#"
+  About Me: "aboutme"
+  Blog: "blog"
+
+navbar-col: "#F5F5F5"
+navbar-text-col: "#404040"
+navbar-border-col: "#EAEAEA"
+page-col: "#FFFFFF"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#F5F5F5"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+
+
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+  - jekyll-paginate
+  - jekyll-sitemap
+
+permalink: /:year/:month/:day/:title/
+
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+
+projects:
+  sort_by: pushed
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 9
+  exclude:
+    archived: false
+    forks: true
+    projects:
+    # - repo-name
+
+
+social_media:
+  # behance: your_username
+  # dribbble: your_username
+  # facebook: your_username
+  # hackerrank: your_username
+  # instagram: your_username
+  # keybase: your_username
+  linkedin: lplenka
+  # mastodon: your_username
+  medium: laluprasad.lenka95
+  # stackoverflow: your_user_id
+  # telegram: your_username
+  twitter: Lplenka95
+  # unsplash: your_username
+  # vk: your_username
+  # website: http://your_website_url
+  # youtube: your_username
+
+topics:
+  - name: Python
+    web_url: https://github.com/topics/python
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
+
+  - name: R
+    web_url: https://github.com/topics/R
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/r/r.png
+
+  - name: Tensorflow
+    web_url: https://github.com/topics/tensorflow
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/tensorflow/tensorflow.png
+
+
+
+
+avatar: "/assets/img/avatar-icon.jpeg"
