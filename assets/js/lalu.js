@@ -13,7 +13,7 @@ var sections = [
 			sentence: "has worked with many deep learning frameworks",
 		},
 		{
-			sentence: "has worked with deployed models on Cloud",
+			sentence: "has deployed Machine Learning and Deep Learning models on Cloud",
 		},
 		{
 
@@ -29,7 +29,7 @@ var sections = [
 			sentence:"has strong communication skills",
 		},
 		{
-                           sentence:"has ability to present findings to a non-technical audience.",
+        	sentence:"has ability to present findings to a non-technical audience",
 
 		},
 

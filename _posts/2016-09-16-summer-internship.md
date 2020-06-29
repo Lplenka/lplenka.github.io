@@ -1,7 +1,7 @@
 ---
 title: "Summer Internship @ ISI, Kolkata"
 published: true
-intro: "This blog shares my experience of summer internship at ISI, Kolkatac and research question I tackled"
+intro: "This blog narrates my experience of summer internship at ISI, Kolkata and research question I tackled"
 ---
 
 #### **Hello everyone**, this is my first ever blogging experience and I am here to share my experience of summer internship at ISI, Kolkata and some technical details about my internship project.
