@@ -31,19 +31,19 @@ Zulip is an open-source chat application that is used by various teams for commu
 >  [Zulip developers chat group](https://chat.zulip.org/) has a specific stream “[Learning](https://chat.zulip.org/#narrow/stream/learning)” where Sumana Harihareswara’s initiation helps students to improve their English writing skills.
 
 **By far my contribution journey to Zulip has been great! I am mostly working on the Zulip-electron app. Here are my up-to-date contributions and ongoing work:**
->  **Pull request: [#118](https://github.com/zulip/zulip-electron/pull/118) fixed issue: [#78](https://github.com/zulip/zulip-electron/issues/78)**
+>  **Pull request: [#118](https://github.com/zulip/zulip-desktop/pull/118) fixed issue: [#78](https://github.com/zulip/zulip-desktop/issues/78)**
 >  There was no support for localhost Zulip servers like “localhost:9991” in the Electron app. I fixed that problem and made switching between local and online servers seamless.
->  **Pull request: [#128](https://github.com/zulip/zulip-electron/pull/128) fixed the following bugs:**
+>  **Pull request: [#128](https://github.com/zulip/zulip-desktop/pull/128) fixed the following bugs:**
 >  1-There was a white screen appearing during startup every time you loaded the app, same problem in server window & “About Zulip” window.
 >  2-No Title & Icon was present in switch server window tab in the taskbar.
 >  3-The switch server window remained open even after we have switched the server, multiple switching leads to many unclosed switch server windows.
->  **Pull request: #[130](https://github.com/zulip/zulip-electron/pull/130) fixed issue: [#124](https://github.com/zulip/zulip-electron/issues/124)**
+>  **Pull request: #[130](https://github.com/zulip/zulip-desktop/pull/130) fixed issue: [#124](https://github.com/zulip/zulip-desktop/issues/124)**
 >  There was no support for handling server 5XX error. When the server remained down the app showed a clueless white screen. This issue was fixed.
->  **Pull request: #[134](https://github.com/zulip/zulip-electron/pull/134) fixed issue: [#110](https://github.com/zulip/zulip-electron/issues/110)**
+>  **Pull request: #[134](https://github.com/zulip/zulip-desktop/pull/134) fixed issue: [#110](https://github.com/zulip/zulip-desktop/issues/110)**
 >  There was no support for showing unread count in app’s tray icon. Now the unread count is shown if you hover over the tray icon. Have to work on the tray icon image to fix this issue completely.
 >  **Ongoing work:**
->  Issue: [#126](https://github.com/zulip/zulip-electron/issues/126)
->  Zulip-electron currently doesn’t support self-signed certificates. I am trying to find a fix for this issue.
+>  Issue: [#126](https://github.com/zulip/zulip-desktop/issues/126)
+>  zulip-electron currently doesn’t support self-signed certificates. I am trying to find a fix for this issue.
 
 ### In the coming days, I will be working to add support for multiple servers, cooler desktop integration and other user experience related bugs in the Electron app.
 
