@@ -48,9 +48,14 @@
     | where_exp: "item", "item.name == 'Extended-Kalman-Filter'"
   %}
 
+    {% assign repo7 = all_pub_repo 
+    | where_exp: "item", "item.name == 'Car-Damage-Detection'"
+  %}
 
 
-  {% assign repo_list = repo1 | push: repo2[0] | push: repo3[0] |push: repo4[0] |push: repo5[0] | push: repo6[0] %}
+
+
+  {% assign repo_list = repo1 | push: repo2[0] | push: repo3[0] |push: repo4[0] |push: repo5[0] | push: repo6[0] | push: repo7[0] %}
 
   {% for repository in repo_list | limit: site.projects.limit %}
     {% unless site.projects.exclude.projects contains repository.name %}
