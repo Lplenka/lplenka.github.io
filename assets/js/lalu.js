@@ -3,11 +3,14 @@
     GLOBALS
 -------------------------*/
 var sections = [
-		{	sentence: "is an enthusiastic data scientist based in Bangalore",
+		{	sentence: "is an enthusiastic data scientist based in Dublin",
 
 		},
+		{	sentence: "is pursuing MSc. Data Science at Trinity College Dublin",
+
+	    },
 		{
-			sentence: "has programming experience with Python, C++, R and Java",
+			sentence: "has programming experience with Python, R, C++ and Java",
 		},
 		{
 			sentence: "has worked with many deep learning frameworks",
@@ -37,18 +40,19 @@ var sections = [
 		},
 		{	sentence: "is excited about solving problems with data",
 		},
-		{	sentence: "is building deep neural nets",
-		},
+
 		{	sentence: "is interested in Machine learning",
 		},
-		{	sentence: "is making AI applications",
+		{	sentence: "is building deep neural nets",
+	    },
+		{	sentence: "is making AI to park autonomous vehicles",
 		},
-		{	sentence: "is curious about Self-driving cars",
+		{	sentence: "is curious about Connected Autonomous Vehicles(CAVs)",
 		},
-		{	sentence: "is a visionary on integrating Deep Learning into HPC architectures",
+		{	sentence: "is reseacrching on safer lane changing approaches for CAVs",
 		},
 
-		{	sentence: "is not so secretly in love with Money Heist",
+		{	sentence: "is not so secretly in love with F.R.I.E.N.D.S",
 		},
 		{	sentence: "is thinking what to write next",
 		},
